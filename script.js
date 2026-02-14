@@ -4,7 +4,7 @@ var stockfish = new Worker('https://cdn.jsdelivr.net/npm/stockfish/stockfish.js'
 
 function onDragStart(source, piece) {
   if (game.game_over()) return false;
-  if (piece.search(/^b/) !== -1) return false;
+  if (piece.search(/^b/) !== -1) return false; // Only allow white to move
 }
 
 function onDrop(source, target) {
