@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Chess AI</title>
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #board {
+      width: 400px;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
   <h2>Play Against AI</h2>
-  <div id="board" style="width: 400px"></div>
+  <div id="board"></div>
 
+  <!-- Chess.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+  <!-- Chessboard.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.js"></script>
+  <!-- Stockfish.js -->
   <script src="https://cdn.jsdelivr.net/npm/stockfish/stockfish.js"></script>
+  <!-- Your custom script -->
   <script src="script.js"></script>
 </body>
 </html>
